@@ -1,0 +1,400 @@
+{% extends "base_layout.html" %}
+{% block content %}
+
+<div class="container-fluid">
+
+    <h1 style="font-weight: bold;color: #f8f7f7;font-size: 70px;">Video</h1><br>
+    <h2 style="font-weight: bold;color:white;">Hip-Hop Music Video... </h2>
+    <div class="scrolling-wrapper row flex-row flex-nowrap mt-4 pb-4 pt-2">
+    <div class="card" style="background-color: black">
+        <a href="{{vdo['Hip-Hop/Rap'][0]['yt_url']}}"><img src='{{vdo['Hip-Hop/Rap'][0]['img_url']}}' style="width: 800px;height: 500px;" class="center"></a>
+            <div class="card-body" style="background-color: black">
+            <div style="font-size: 30px;color:white;padding-left: 500px;">
+                <p>Name : {{vdo['Hip-Hop/Rap'][0]["title"]}}<br>
+                Artist : {{vdo['Hip-Hop/Rap'][0]["artist"]}}<br>
+                Genre : {{vdo['Hip-Hop/Rap'][0]["genre"]}}<br>
+                Album : {{vdo['Hip-Hop/Rap'][0]["album"]}}<br>
+                Year : {{vdo['Hip-Hop/Rap'][0]["year"]}}<br>
+                Country : {{vdo['Hip-Hop/Rap'][0]["country"]}}<br></p>
+            </div>
+        </div>
+        </a>
+        </div>
+    
+
+    {% for vid in vdo['Hip-Hop/Rap'] %}
+    {% if vid != vdo['Hip-Hop/Rap'][0] %}
+    <div class="card" style="background-color: black">
+        <a href = "{{vid['yt_url']}}"><img src='{{vid["img_url"]}}' style="width: 800px;height: 500px;" class="center"></a>
+        
+        <div class="card-body" style="background-color: black">
+        <div style="font-size: 30px;color:white;padding-left: 500px; ">
+            <p>Name : {{vid["title"]}}<br>
+                Artist : {{vid["artist"]}}<br>
+                Genre : {{vid["genre"]}}<br>
+                Album : {{vid["album"]}}<br>
+                Year : {{vid["year"]}}<br>
+                Country : {{vid["country"]}}<br></p>
+            </div>
+        </div>
+    
+        </div>
+    
+  
+    {% endif %}
+    {% endfor %}
+    </div>
+    <br>
+
+    <h2 style="font-weight: bold;color:white;">Pop Music Video... </h2>
+    <div class="scrolling-wrapper row flex-row flex-nowrap mt-4 pb-4 pt-2">
+    <div class="card" style="background-color: black">
+        <a href="{{vdo['Pop'][0]['yt_url']}}"><img src='{{vdo['Pop'][0]['img_url']}}' style="width: 800px;height: 500px;" class="center"></a>
+            <div class="card-body" style="background-color: black">
+            <div style="font-size: 30px;color:white;padding-left: 500px;">
+                <p>Name : {{vdo['Pop'][0]["title"]}}<br>
+                Artist : {{vdo['Pop'][0]["artist"]}}<br>
+                Genre : {{vdo['Pop'][0]["genre"]}}<br>
+                Album : {{vdo['Pop'][0]["album"]}}<br>
+                Year : {{vdo['Pop'][0]["year"]}}<br>
+                Country : {{vdo['Pop'][0]["country"]}}<br></p>
+            </div>
+        </div>
+        </a>
+        </div>
+    
+
+    {% for vid in vdo['Pop'] %}
+    {% if vid != vdo['Pop'][0] %}
+    <div class="card" style="background-color: black">
+        <a href = "{{vid['yt_url']}}"><img src='{{vid["img_url"]}}' style="width: 800px;height: 500px;" class="center"></a>
+        
+        <div class="card-body" style="background-color: black">
+        <div style="font-size: 30px;color:white;padding-left: 500px; ">
+            <p>Name : {{vid["title"]}}<br>
+                Artist : {{vid["artist"]}}<br>
+                Genre : {{vid["genre"]}}<br>
+                Album : {{vid["album"]}}<br>
+                Year : {{vid["year"]}}<br>
+                Country : {{vid["country"]}}<br></p>
+            </div>
+        </div>
+    
+        </div>
+    
+  
+    {% endif %}
+    {% endfor %}
+    </div>
+
+    <br>
+
+
+    <h2 style="font-weight: bold;color:white;">Alternative/Indie Music Video... </h2>
+    <div class="scrolling-wrapper row flex-row flex-nowrap mt-4 pb-4 pt-2">
+    <div class="card" style="background-color: black">
+        <a href="{{vdo['Alternative/Indie'][0]['yt_url']}}"><img src='{{vdo['Alternative/Indie'][0]['img_url']}}' style="width: 800px;height: 500px;" class="center"></a>
+            <div class="card-body" style="background-color: black">
+            <div style="font-size: 30px;color:white;padding-left: 500px;">
+                <p>Name : {{vdo['Alternative/Indie'][0]["title"]}}<br>
+                Artist : {{vdo['Alternative/Indie'][0]["artist"]}}<br>
+                Genre : {{vdo['Alternative/Indie'][0]["genre"]}}<br>
+                Album : {{vdo['Alternative/Indie'][0]["album"]}}<br>
+                Year : {{vdo['Alternative/Indie'][0]["year"]}}<br>
+                Country : {{vdo['Alternative/Indie'][0]["country"]}}<br></p>
+            </div>
+        </div>
+        </a>
+        </div>
+    
+
+    {% for vid in vdo['Alternative/Indie'] %}
+    {% if vid != vdo['Alternative/Indie'][0] %}
+    <div class="card" style="background-color: black">
+        <a href = "{{vid['yt_url']}}"><img src='{{vid["img_url"]}}' style="width: 800px;height: 500px;" class="center"></a>
+        
+        <div class="card-body" style="background-color: black">
+        <div style="font-size: 30px;color:white;padding-left: 500px; ">
+            <p>Name : {{vid["title"]}}<br>
+                Artist : {{vid["artist"]}}<br>
+                Genre : {{vid["genre"]}}<br>
+                Album : {{vid["album"]}}<br>
+                Year : {{vid["year"]}}<br>
+                Country : {{vid["country"]}}<br></p>
+            </div>
+        </div>
+    
+        </div>
+    
+  
+    {% endif %}
+    {% endfor %}
+    </div>
+
+
+    <br>
+    
+    <h2 style="font-weight: bold;color:white;">R&B/Soul Music Video... </h2>
+    <div class="scrolling-wrapper row flex-row flex-nowrap mt-4 pb-4 pt-2">
+    <div class="card" style="background-color: black">
+        <a href="{{vdo['R&B/Soul'][0]['yt_url']}}"><img src='{{vdo['R&B/Soul'][0]['img_url']}}' style="width: 800px;height: 500px;" class="center"></a>
+            <div class="card-body" style="background-color: black">
+            <div style="font-size: 30px;color:white;padding-left: 500px;">
+                <p>Name : {{vdo['R&B/Soul'][0]["title"]}}<br>
+                Artist : {{vdo['R&B/Soul'][0]["artist"]}}<br>
+                Genre : {{vdo['R&B/Soul'][0]["genre"]}}<br>
+                Album : {{vdo['R&B/Soul'][0]["album"]}}<br>
+                Year : {{vdo['R&B/Soul'][0]["year"]}}<br>
+                Country : {{vdo['R&B/Soul'][0]["country"]}}<br></p>
+            </div>
+        </div>
+        </a>
+        </div>
+    
+
+    {% for vid in vdo['R&B/Soul'] %}
+    {% if vid != vdo['R&B/Soul'][0] %}
+    <div class="card" style="background-color: black">
+        <a href = "{{vid['yt_url']}}"><img src='{{vid["img_url"]}}' style="width: 800px;height: 500px;" class="center"></a>
+        
+        <div class="card-body" style="background-color: black">
+        <div style="font-size: 30px;color:white;padding-left: 500px; ">
+            <p>Name : {{vid["title"]}}<br>
+                Artist : {{vid["artist"]}}<br>
+                Genre : {{vid["genre"]}}<br>
+                Album : {{vid["album"]}}<br>
+                Year : {{vid["year"]}}<br>
+                Country : {{vid["country"]}}<br></p>
+            </div>
+        </div>
+    
+        </div>
+    
+  
+    {% endif %}
+    {% endfor %}
+    </div>
+
+    <br>
+    
+    <h2 style="font-weight: bold;color:white;">Reggae Music Video... </h2>
+    <div class="scrolling-wrapper row flex-row flex-nowrap mt-4 pb-4 pt-2">
+    <div class="card" style="background-color: black">
+        <a href="{{vdo['Reggae'][0]['yt_url']}}"><img src='{{vdo['Reggae'][0]['img_url']}}' style="width: 800px;height: 500px;" class="center"></a>
+            <div class="card-body" style="background-color: black">
+            <div style="font-size: 30px;color:white;padding-left: 500px;">
+                <p>Name : {{vdo['Reggae'][0]["title"]}}<br>
+                Artist : {{vdo['Reggae'][0]["artist"]}}<br>
+                Genre : {{vdo['Reggae'][0]["genre"]}}<br>
+                Album : {{vdo['Reggae'][0]["album"]}}<br>
+                Year : {{vdo['Reggae'][0]["year"]}}<br>
+                Country : {{vdo['Reggae'][0]["country"]}}<br></p>
+            </div>
+        </div>
+        </a>
+        </div>
+    
+
+    {% for vid in vdo['Reggae'] %}
+    {% if vid != vdo['Reggae'][0] %}
+    <div class="card" style="background-color: black">
+        <a href = "{{vid['yt_url']}}"><img src='{{vid["img_url"]}}' style="width: 800px;height: 500px;" class="center"></a>
+        
+        <div class="card-body" style="background-color: black">
+        <div style="font-size: 30px;color:white;padding-left: 500px; ">
+            <p>Name : {{vid["title"]}}<br>
+                Artist : {{vid["artist"]}}<br>
+                Genre : {{vid["genre"]}}<br>
+                Album : {{vid["album"]}}<br>
+                Year : {{vid["year"]}}<br>
+                Country : {{vid["country"]}}<br></p>
+            </div>
+        </div>
+    
+        </div>
+    
+  
+    {% endif %}
+    {% endfor %}
+    </div>
+
+    <br>
+    
+    <h2 style="font-weight: bold;color:white;">EDM Music Video... </h2>
+    <div class="scrolling-wrapper row flex-row flex-nowrap mt-4 pb-4 pt-2">
+    <div class="card" style="background-color: black">
+        <a href="{{vdo['Electronic dance music'][0]['yt_url']}}"><img src='{{vdo['Electronic dance music'][0]['img_url']}}' style="width: 800px;height: 500px;" class="center"></a>
+            <div class="card-body" style="background-color: black">
+            <div style="font-size: 30px;color:white;padding-left: 500px;">
+                <p>Name : {{vdo['Electronic dance music'][0]["title"]}}<br>
+                Artist : {{vdo['Electronic dance music'][0]["artist"]}}<br>
+                Genre : {{vdo['Electronic dance music'][0]["genre"]}}<br>
+                Album : {{vdo['Electronic dance music'][0]["album"]}}<br>
+                Year : {{vdo['Electronic dance music'][0]["year"]}}<br>
+                Country : {{vdo['Electronic dance music'][0]["country"]}}<br></p>
+            </div>
+        </div>
+        </a>
+        </div>
+    
+
+    {% for vid in vdo['Electronic dance music'] %}
+    {% if vid != vdo['Electronic dance music'][0] %}
+    <div class="card" style="background-color: black">
+        <a href = "{{vid['yt_url']}}"><img src='{{vid["img_url"]}}' style="width: 800px;height: 500px;" class="center"></a>
+        
+        <div class="card-body" style="background-color: black">
+        <div style="font-size: 30px;color:white;padding-left: 500px; ">
+            <p>Name : {{vid["title"]}}<br>
+                Artist : {{vid["artist"]}}<br>
+                Genre : {{vid["genre"]}}<br>
+                Album : {{vid["album"]}}<br>
+                Year : {{vid["year"]}}<br>
+                Country : {{vid["country"]}}<br></p>
+            </div>
+        </div>
+    
+        </div>
+    
+  
+    {% endif %}
+    {% endfor %}
+    </div>
+
+    <br>
+    
+    <h2 style="font-weight: bold;color:white;">K-pop Music Video... </h2>
+    <div class="scrolling-wrapper row flex-row flex-nowrap mt-4 pb-4 pt-2">
+    <div class="card" style="background-color: black">
+        <a href="{{vdo['K-pop'][0]['yt_url']}}"><img src='{{vdo['K-pop'][0]['img_url']}}' style="width: 800px;height: 500px;" class="center"></a>
+            <div class="card-body" style="background-color: black">
+            <div style="font-size: 30px;color:white;padding-left: 500px;">
+                <p>Name : {{vdo['K-pop'][0]["title"]}}<br>
+                Artist : {{vdo['K-pop'][0]["artist"]}}<br>
+                Genre : {{vdo['K-pop'][0]["genre"]}}<br>
+                Album : {{vdo['K-pop'][0]["album"]}}<br>
+                Year : {{vdo['K-pop'][0]["year"]}}<br>
+                Country : {{vdo['K-pop'][0]["country"]}}<br></p>
+            </div>
+        </div>
+        </a>
+        </div>
+    
+
+    {% for vid in vdo['K-pop'] %}
+    {% if vid != vdo['K-pop'][0] %}
+    <div class="card" style="background-color: black">
+        <a href = "{{vid['yt_url']}}"><img src='{{vid["img_url"]}}' style="width: 800px;height: 500px;" class="center"></a>
+        
+        <div class="card-body" style="background-color: black">
+        <div style="font-size: 30px;color:white;padding-left: 500px; ">
+            <p>Name : {{vid["title"]}}<br>
+                Artist : {{vid["artist"]}}<br>
+                Genre : {{vid["genre"]}}<br>
+                Album : {{vid["album"]}}<br>
+                Year : {{vid["year"]}}<br>
+                Country : {{vid["country"]}}<br></p>
+            </div>
+        </div>
+    
+        </div>
+    
+  
+    {% endif %}
+    {% endfor %}
+    </div>
+
+    <br>
+    
+    <h2 style="font-weight: bold;color:white;">J-Pop Music Video... </h2>
+    <div class="scrolling-wrapper row flex-row flex-nowrap mt-4 pb-4 pt-2">
+    <div class="card" style="background-color: black">
+        <a href="{{vdo['J-Pop'][0]['yt_url']}}"><img src='{{vdo['J-Pop'][0]['img_url']}}' style="width: 800px;height: 500px;" class="center"></a>
+            <div class="card-body" style="background-color: black">
+            <div style="font-size: 30px;color:white;padding-left: 500px;">
+                <p>Name : {{vdo['J-Pop'][0]["title"]}}<br>
+                Artist : {{vdo['J-Pop'][0]["artist"]}}<br>
+                Genre : {{vdo['J-Pop'][0]["genre"]}}<br>
+                Album : {{vdo['J-Pop'][0]["album"]}}<br>
+                Year : {{vdo['J-Pop'][0]["year"]}}<br>
+                Country : {{vdo['J-Pop'][0]["country"]}}<br></p>
+            </div>
+        </div>
+        </a>
+        </div>
+    
+
+    {% for vid in vdo['J-Pop'] %}
+    {% if vid != vdo['J-Pop'][0] %}
+    <div class="card" style="background-color: black">
+        <a href = "{{vid['yt_url']}}"><img src='{{vid["img_url"]}}' style="width: 800px;height: 500px;" class="center"></a>
+        
+        <div class="card-body" style="background-color: black">
+        <div style="font-size: 30px;color:white;padding-left: 500px; ">
+            <p>Name : {{vid["title"]}}<br>
+                Artist : {{vid["artist"]}}<br>
+                Genre : {{vid["genre"]}}<br>
+                Album : {{vid["album"]}}<br>
+                Year : {{vid["year"]}}<br>
+                Country : {{vid["country"]}}<br></p>
+            </div>
+        </div>
+    
+        </div>
+    
+  
+    {% endif %}
+    {% endfor %}
+    </div>
+
+    
+    <br>
+    
+    <h2 style="font-weight: bold;color:white;">Rock Music Video... </h2>
+    <div class="scrolling-wrapper row flex-row flex-nowrap mt-4 pb-4 pt-2">
+    <div class="card" style="background-color: black">
+        <a href="{{vdo['Rock'][0]['yt_url']}}"><img src='{{vdo['Rock'][0]['img_url']}}' style="width: 800px;height: 500px;" class="center"></a>
+            <div class="card-body" style="background-color: black">
+            <div style="font-size: 30px;color:white;padding-left: 500px;">
+                <p>Name : {{vdo['Rock'][0]["title"]}}<br>
+                Artist : {{vdo['Rock'][0]["artist"]}}<br>
+                Genre : {{vdo['Rock'][0]["genre"]}}<br>
+                Album : {{vdo['Rock'][0]["album"]}}<br>
+                Year : {{vdo['Rock'][0]["year"]}}<br>
+                Country : {{vdo['Rock'][0]["country"]}}<br></p>
+            </div>
+        </div>
+        </a>
+        </div>
+    
+
+    {% for vid in vdo['Rock'] %}
+    {% if vid != vdo['Rock'][0] %}
+    <div class="card" style="background-color: black">
+        <a href = "{{vid['yt_url']}}"><img src='{{vid["img_url"]}}' style="width: 800px;height: 500px;" class="center"></a>
+        
+        <div class="card-body" style="background-color: black">
+        <div style="font-size: 30px;color:white;padding-left: 500px; ">
+            <p>Name : {{vid["title"]}}<br>
+                Artist : {{vid["artist"]}}<br>
+                Genre : {{vid["genre"]}}<br>
+                Album : {{vid["album"]}}<br>
+                Year : {{vid["year"]}}<br>
+                Country : {{vid["country"]}}<br></p>
+            </div>
+        </div>
+    
+        </div>
+    
+  
+    {% endif %}
+    {% endfor %}
+    </div>
+
+
+
+</div>
+
+
+
+{% endblock %}
